@@ -153,6 +153,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704071920571_InitialCreate.cs" />
+    <Compile Include="Migrations\201704071920571_InitialCreate.Designer.cs">
+      <DependentUpon>201704071920571_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704072044570_added-dog-name.cs" />
+    <Compile Include="Migrations\201704072044570_added-dog-name.Designer.cs">
+      <DependentUpon>201704072044570_added-dog-name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Dog.cs" />
     <Compile Include="Models\DogBreed.cs" />
     <Compile Include="Models\DogInformationContext.cs" />
@@ -223,6 +232,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201704071920571_InitialCreate.resx">
+      <DependentUpon>201704071920571_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704072044570_added-dog-name.resx">
+      <DependentUpon>201704072044570_added-dog-name.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

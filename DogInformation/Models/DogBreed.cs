@@ -8,6 +8,8 @@ namespace DogInformation.Models
     public class DogBreed
     {
         public int DogBreedID { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Display(Name = "Breed")]
         public string Description { get; set; }
     }
 }

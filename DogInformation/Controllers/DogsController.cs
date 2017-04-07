@@ -48,7 +48,7 @@ namespace DogInformation.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DogID,DogAge,DogGender,DogBreedID")] Dog dog)
+        public ActionResult Create([Bind(Include = "DogID,Name,DogAge,DogGender,DogBreedID")] Dog dog)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace DogInformation.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "DogID,DogAge,DogGender,DogBreedID")] Dog dog)
+        public ActionResult Edit([Bind(Include = "DogID,Name,DogAge,DogGender,DogBreedID")] Dog dog)
         {
             if (ModelState.IsValid)
             {
