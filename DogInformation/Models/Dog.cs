@@ -18,6 +18,7 @@ namespace DogInformation.Models
 
         public string Name { get; set; }
 
+        [Display(Name = "Breed")]
         public int DogBreedID { get; set; }
         public virtual DogBreed Breed { get; set; }
     }
